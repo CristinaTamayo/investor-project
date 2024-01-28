@@ -1,0 +1,343 @@
+
+:root {
+  --bs-body-font-family: 'Jost', sans-serif;
+}
+
+:root .dropdown-menu {
+  --bs-dropdown-link-hover-bg: #F7F4F3;
+  --bs-dropdown-link-active-bg: #192146;
+}
+
+:root .btn-primary {
+  --bs-btn-color: #192146;
+  --bs-btn-bg: #ff8873;
+  --bs-btn-border-color: #ff8873;
+  --bs-btn-hover-color: #192146;
+  --bs-btn-hover-bg: #e57a67;
+  --bs-btn-hover-border-color: #e57a67;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #192146;
+  --bs-btn-active-bg: #e57a67;
+  --bs-btn-active-font-size: 2em;
+  --bs-btn-active-border-color: #192146;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6e6c6d;
+  --bs-btn-disabled-border-color: #6e6c6d;
+}
+
+:root .btn-secondary {
+  --bs-btn-color: #313030;
+  --bs-btn-bg: #dedbda;
+  --bs-btn-border-color: #dedbda;
+  --bs-btn-hover-color: #313030;
+  --bs-btn-hover-bg: #c5c3c2;
+  --bs-btn-hover-border-color: #c5c3c2;
+  --bs-btn-focus-shadow-rgb: 130,138,145;
+  --bs-btn-active-color: #313030;
+  --bs-btn-active-bg: #acaaaa;
+  --bs-btn-active-border-color: #acaaaa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+
+:root .btn-outline-secondary {
+  --bs-btn-color: #626161;
+  --bs-btn-border-color: #626161;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #626161;
+  --bs-btn-hover-border-color: #626161;
+  --bs-btn-focus-shadow-rgb: 108,117,125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4a4948;
+  --bs-btn-active-border-color: #4a4948;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+}
+
+:root .card {
+    --bs-card-border-color: none;
+}
+
+:root .nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: #acaaaa;
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.gradient-background {
+  /* background: linear-gradient(300deg, #211E3F, #2B2D5B, #E37B3D); //#1F6DC7 */
+  background-image: linear-gradient(300deg, #1b1a2c, #1e1d34, #21213d, #242446, #27284f, #3c2d5b, #653665, #ae4f6f, #ff8873, #ffb45d);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon::before {
+  font-family:'Bootstrap-icons';
+  padding-right: .5em;
+}
+/*
+#slider {
+ height: 900px;
+}
+
+/* Navbar*/
+.bg-dark {
+  background-color: #192146 !important;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.navbar-brand {
+color: #ff8873;
+}
+
+.i-airplane::before {
+  content: '\F7CC';
+}
+
+/* Features */
+.features {
+  background-color: #F7F4F3;
+}
+
+.feature-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* News*/ 
+.label {
+  font-style: italic;
+  color: #626161;
+}
+
+/* Slider */
+
+.carousel-item {
+  height: 650px;
+}
+
+.carousel-item img {
+  background-position-y: bottom; 
+}
+
+.carousel-caption {
+bottom: 4rem;
+}
+
+/* Events and Presentations*/
+.events-and-presentations {
+  color:#fff
+}
+
+.event-item .item-date {
+  font-style: italic;
+  color: #c5c3c2;
+}
+
+.item-headline {
+  font-size: 1.3rem;
+}
+
+svg {
+  color: #fff;
+}
+
+.i-calendar::before {
+  content:'\F205';
+}
+
+.i-mic::before {
+  content: '\F490';
+  padding-right: .2em;
+}
+
+.i-download::before {
+  content: '\F30A';
+}
+
+/* Latest Quarterly Results*/
+
+#latest-quarterly-report {
+  background-image: url("../images/clouds.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #F7F4F3;
+}
+
+.quarter-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 0%;
+  color:#ff8873;
+}
+
+.quarter-year {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #192146;
+}
+
+.quarter-icon-background {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  border: 2px solid;
+  border-color: #ff8873;
+}
+
+.latest-quarterly a {
+  color: #192146;
+}
+
+.quarter-icon::before {
+  font-size: 2.8em;
+  padding-right: 0px;
+}
+
+/*
+.quarter-icon:hover::before {
+  color: #fff;
+}
+*/
+
+.quarter-icon-background:hover {
+  background-color: #ff8873;
+}
+
+.quarter-icon-background:active {
+  background-color: #e57a67;
+  border-color: #e57a67;
+}
+
+.i-pdf::before {
+  content: '\F756';
+}
+
+.i-presentation::before {
+  content:'\F310';
+}
+
+.latest-quarterly .text-body-emphasis {
+  font-size: 1.3rem !important;
+}
+
+.link-page {
+  font-style: italic;
+  color: #000;
+}
+
+/* Quick links*/
+.img-card-governance {
+  background-image: url('../images/airplane-sunset.jpg');
+  background-size: cover;
+  background-position-y: 75%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/*
+.img-card-governance:hover {
+  transform: scale(1.3);
+  background-color: #F7F4F3;
+}
+*/
+
+.img-card-governance:hover img {
+  opacity: 0.3;
+}
+
+.img-card-sec-filings {
+  background-image: url('../images/airport.jpg');
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.img-card-investor-resources {
+  background-image: url('../images/man-mountain.jpg');
+  background-size: cover;
+}
+
+
+
+/* Footer */
+.container-footer {
+  background-color: #192146;
+  color: #fff;
+}
+
+.container-footer a {
+  color: #fff;
+}
+.container-footer h5 {
+  color: #ff8873;
+}
+
+.container-footer .social-media ul a {
+  color: #ff8873;
+}
+
+.container-footer .navbar-brand {
+  color: #ff8873;
+}
+
+.form-check-input:checked {
+  background-color: #ff8873;
+  border-color: #ff8873;
+}
+
+@media (max-width: 600px) { 
+
+  .carousel-caption {
+    bottom: 13.5em;
+    }
+  
+  .carousel-inner {
+    max-height: 250px;
+  }
+
+  .slider-description {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) { 
+
+  .carousel-indicators {
+    display: none;
+  }
+}
