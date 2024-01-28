@@ -149,7 +149,7 @@ color: #ff8873;
 /* Slider */
 
 .carousel-item {
-  height: 500px;
+  height: 500px !important; 
 }
 
 .carousel-item img {
